@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A8CEE531D2BE6B70089A664 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CEE521D2BE6B70089A664 /* Task.swift */; };
 		3AE77A0C1CE525B40075BE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77A0B1CE525B40075BE36 /* AppDelegate.swift */; };
 		3AE77A0E1CE525B40075BE36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77A0D1CE525B40075BE36 /* ViewController.swift */; };
 		3AE77A111CE525B40075BE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE77A0F1CE525B40075BE36 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		3AE77A161CE525B40075BE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE77A141CE525B40075BE36 /* LaunchScreen.storyboard */; };
 		3AE77A211CE525B40075BE36 /* FocusMinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77A201CE525B40075BE36 /* FocusMinderTests.swift */; };
 		3AE77A2C1CE525B40075BE36 /* FocusMinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77A2B1CE525B40075BE36 /* FocusMinderUITests.swift */; };
+		3AE77A3C1CE6450F0075BE36 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77A3B1CE6450F0075BE36 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A8CEE521D2BE6B70089A664 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3AE77A081CE525B30075BE36 /* FocusMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE77A0B1CE525B40075BE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE77A0D1CE525B40075BE36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		3AE77A271CE525B40075BE36 /* FocusMinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusMinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE77A2B1CE525B40075BE36 /* FocusMinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusMinderUITests.swift; sourceTree = "<group>"; };
 		3AE77A2D1CE525B40075BE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE77A3B1CE6450F0075BE36 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A8CEE4D1D2BE0820089A664 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AE77A0F1CE525B40075BE36 /* Main.storyboard */,
+				3AE77A141CE525B40075BE36 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3A8CEE4E1D2BE08F0089A664 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AE77A0D1CE525B40075BE36 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3A8CEE4F1D2BE3510089A664 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CEE521D2BE6B70089A664 /* Task.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3AE779FF1CE525B30075BE36 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +126,14 @@
 		3AE77A0A1CE525B30075BE36 /* FocusMinder */ = {
 			isa = PBXGroup;
 			children = (
+				3A8CEE4F1D2BE3510089A664 /* Model */,
+				3A8CEE4E1D2BE08F0089A664 /* Controller */,
+				3A8CEE4D1D2BE0820089A664 /* View */,
+				3AE77A391CE644DD0075BE36 /* View */,
 				3AE77A0B1CE525B40075BE36 /* AppDelegate.swift */,
-				3AE77A0D1CE525B40075BE36 /* ViewController.swift */,
-				3AE77A0F1CE525B40075BE36 /* Main.storyboard */,
 				3AE77A121CE525B40075BE36 /* Assets.xcassets */,
-				3AE77A141CE525B40075BE36 /* LaunchScreen.storyboard */,
 				3AE77A171CE525B40075BE36 /* Info.plist */,
+				3AE77A3A1CE644E70075BE36 /* Controller */,
 			);
 			path = FocusMinder;
 			sourceTree = "<group>";
@@ -123,6 +154,21 @@
 				3AE77A2D1CE525B40075BE36 /* Info.plist */,
 			);
 			path = FocusMinderUITests;
+			sourceTree = "<group>";
+		};
+		3AE77A391CE644DD0075BE36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AE77A3B1CE6450F0075BE36 /* UIViewExtensions.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3AE77A3A1CE644E70075BE36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8CEE531D2BE6B70089A664 /* Task.swift in Sources */,
 				3AE77A0E1CE525B40075BE36 /* ViewController.swift in Sources */,
+				3AE77A3C1CE6450F0075BE36 /* UIViewExtensions.swift in Sources */,
 				3AE77A0C1CE525B40075BE36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +535,7 @@
 				3AE77A321CE525B40075BE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AE77A331CE525B40075BE36 /* Build configuration list for PBXNativeTarget "FocusMinderTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +544,7 @@
 				3AE77A351CE525B40075BE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AE77A361CE525B40075BE36 /* Build configuration list for PBXNativeTarget "FocusMinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +553,7 @@
 				3AE77A381CE525B40075BE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
